@@ -48,7 +48,7 @@ jobs:
     - name: setup kubeconfig
       id: setup-kubeconfig
       env: 
-        CLUSTERNAME: ci-cd-demo-warmup2
+        CLUSTERNAME: my-demo
       run: |
           aws eks --region us-west-2 update-kubeconfig --name $CLUSTERNAME
     - name: Deploy k8s yaml
